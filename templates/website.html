@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iris Flower Classification</title>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            Sepal length: <input type="number" min="4.3" max="7.9" step="0.1" name="slength", placeholder="Enter sepal length in cm" required/>
+            <br><br>
+            Sepal width: <input type="number" min="2" max="4.4" step="0.1" name="swidth", placeholder="Enter sepal width in cm" required/>
+            <br><br>
+            Petal length: <input type="number" min="1" max="6.9" step="0.1" name="plength", placeholder="Enter petal length in cm" required/>
+            <br><br>
+            Petal width: <input type="number" min="0.1" max="2.5" step="0.1" name="pwidth", placeholder="Enter petal width in cm" required/>
+            <br><br>
+            <button value="Submit">Determine Sub-species</button>
+        </form>
+        <p style="text-align: center;">{{ output }}</p>
+    </body>
+</html>
